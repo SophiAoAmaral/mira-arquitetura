@@ -1,0 +1,41 @@
+.carrousel{
+    background-color: var(--bege);
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+    padding: 10px;
+}
+
+.carrousel::-webkit-scrollbar{
+    display: none;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: max-content;
+    padding-right: 1em;
+    animation: spin 20s linear infinite;
+}
+
+.carrousel:hover .group{
+    animation-play-state: paused;
+}
+
+.card{
+    flex: 0 0 auto;
+    padding: 1em;
+    text-align: center;
+    font-family: var(--font-mono);
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.555);
+    font-size: 12px;
+}
+
+@keyframes spin{
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
