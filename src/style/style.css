@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url(card-apresentacao.css);
 @import url(carrousel.css);
+@import url(card-recentes.css);
 :root{
     --font-title: "Playfair Display", serif;
     --font-inter : "Inter", sans-serif;
@@ -172,8 +173,3 @@
     font-size: 28px;
 }
 
-
-.card-recentes{
-    margin-top: 60px;
-    height: 90vh;
-}
