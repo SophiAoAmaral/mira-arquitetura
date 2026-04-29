@@ -2,7 +2,7 @@
 
 .card-apresentacao{
     background-color: var(--bege);
-    height: 100vh;
+    max-height: 100vh;
 
 }
 
@@ -14,7 +14,7 @@
     text-align: center;
     align-items: center;
     margin-bottom: 30px;
-
+    border-bottom: 1px solid rgba(88, 66, 16, 0.397);
 
 }
 
