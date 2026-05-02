@@ -2,6 +2,7 @@
 @import url(card-apresentacao.css);
 @import url(carrousel.css);
 @import url(card-recentes.css);
+@import url(card-dedicatoria.css);
 :root{
     --font-title: "Playfair Display", serif;
     --font-inter : "Inter", sans-serif;

@@ -1,0 +1,28 @@
+.card-dedicatoria{
+    height: 100vh;
+    background-image: url(/src/imgs/casa-vidro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-dedicatoria{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+
+.text-dedicatoria p:first-child{
+    font-size: 5rem;
+    font-family: var(--font-title);
+}
+
+.text-dedicatoria p:last-child{
+    font-family: var( --font-mono);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 20  px;
+}
