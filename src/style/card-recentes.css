@@ -1,6 +1,7 @@
 #box-recentes{
     max-width: 1300px;
     margin: auto;
+    padding-top: 90px;
 }
 
 .card-recentes{
@@ -59,7 +60,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:300px 300px ;
-    gap: 5px;
+    gap: 7px;
 }
 
 .recentes-grid  img {
@@ -70,7 +71,7 @@
     overflow: hidden;
     margin: 2px;
     border-radius: 20px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.267) ;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.103) ;
 }
 .recentes-grid article{
     position: relative;
@@ -109,7 +110,7 @@
     font-family: var(--font-title);
     font-size: 30px;
     margin-right: 95px;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .detalhe-cidade span:last-child{
