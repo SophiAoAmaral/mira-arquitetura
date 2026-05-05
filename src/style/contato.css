@@ -24,3 +24,97 @@
     top: 9px;
     left: -30px;
 }
+
+.box-contato{
+    display: grid;
+    max-width: 1300px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+}
+
+.contato__titulo p:first-child{
+    font-size: 4rem;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.contato__titulo p:first-child span{
+    color: var(--bronze);
+    font-style: italic;
+}
+
+.contato__titulo p:last-child{
+    max-width: 350px;
+    font-size: 1.3rem;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.contato__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 30px;
+    border-top: 1px solid var(--bronze);
+}
+
+.info-bloco__rotulo{
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: var(--font-mono);
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    color: var(--pergaminho);
+    margin-bottom: 10px;
+}
+
+.info-bloco__destaque{
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.info-bloco__complemento{
+    font-size: 0.8rem;
+}
+
+.formulario{
+    background-color: rgba(65, 63, 63, 0.444);
+    
+}
+
+.contato__form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 30px;
+}
+
+.form-campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-campo label{
+    text-transform: uppercase;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.form-campo input{
+    padding: 5px;
+    margin: 5px;
+    width: 600px;
+    background-color: transparent;
+    border: none;
+    border-bottom:1px solid var(--bronze) ;
+}
+
+.form-campo input:focus,textarea:focus{
+    outline: none;
+}
