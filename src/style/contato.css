@@ -1,0 +1,26 @@
+.contato{
+    background-color: black;
+    height: 100vh;
+    color: white;
+    padding-top: 90px;
+}
+
+.contato__chamada{
+    max-width: 1300px;
+    margin: auto;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    color: var(--bronze);
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.contato__chamada::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color:var(--bronze-escuro);
+    top: 9px;
+    left: -30px;
+}

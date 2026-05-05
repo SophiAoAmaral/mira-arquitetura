@@ -5,6 +5,7 @@
 @import url(card-dedicatoria.css);
 @import url(card-servicos.css);
 @import url(clientes.css);
+@import url(contato.css);
 :root{
     --font-title: "Playfair Display", serif;
     --font-inter : "Inter", sans-serif;
