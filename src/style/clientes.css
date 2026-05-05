@@ -1,0 +1,83 @@
+#clientes{
+    height: 90vh;
+}
+
+#box-clientes{
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 90px;
+}
+#p-clientes{
+    max-width: 350px;
+    font-size: 3.5rem;
+
+}
+
+#p-clientes span{
+    font-style: italic;
+}
+
+.detalhe-clientes{
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 45px;
+    letter-spacing: 2px;
+    color: var(--xisto);
+}
+
+.detalhe-clientes::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color:var(--bronze-escuro);
+    top: 10px;
+    left: -45px;
+}
+
+#clientes-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#clientes-grid article{
+    display: flex;
+    gap: 30px;
+    padding:20px;
+    background-color: var(--bege);
+    border-radius: 10px;
+}
+
+#clientes-grid article img{
+    max-width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.clientes-text{
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 10px;
+    font-family: var(--font-inter);
+    font-weight: 200;
+}
+
+.clientes-name{
+    font-size: 1.3rem;
+    margin: 10px;
+    color: rgb(122, 89, 16);
+}
+
+.clientes-cidade{
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: var(--bronze-escuro);
+}
