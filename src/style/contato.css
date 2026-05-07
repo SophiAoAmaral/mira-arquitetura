@@ -106,7 +106,7 @@
     margin: 5px;
 }
 
-.form-campo input{
+.form-campo input, textarea{
     padding: 5px;
     margin: 5px;
     width: 600px;
