@@ -130,24 +130,3 @@
     ;
 }
 
-
-
-.form-campo__erro {
-    display: block;
-    color: #c0392b;
-    font-size: 13px;
-    margin-top: 4px;
-    min-height: 16px; 
-}
-
-
-.form-campo__input.invalido,
-.form-campo__textarea.invalido {
-    border-color: #c0392b;
-}
-
-
-.form-campo__input.valido,
-.form-campo__textarea.valido {
-    border-color: #27ae60;
-}
