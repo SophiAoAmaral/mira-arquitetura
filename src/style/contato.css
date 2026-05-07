@@ -119,11 +119,23 @@
     outline: none;
 } 
 
+.form-erro{
+    color: red;
+    font-family: var(--font-inter);
+    padding: 5px;
+}
+
+.error{
+    color: red;
+}
 
 .invalid{
     border: 1px solid red !important; 
+    border-radius: 10px;
     
 }
+
+
 
 .valid{
     border: 1px solid green
