@@ -95,6 +95,7 @@
 .form-campo{
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .form-campo label{
@@ -138,7 +139,18 @@
 
 
 .valid{
-    border: 1px solid green
-    ;
+    color: green;
 }
 
+
+
+.form-botao{
+ padding: 10px 20px 10px 20px;
+ margin: auto;
+ border: none;
+ background-color: var(--bronze-escuro);
+ color: white;
+ font-size: 15px;
+ border-radius: 10px;
+ cursor: pointer;
+}

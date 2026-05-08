@@ -35,17 +35,17 @@ function validarNome(){
 
 function validarEmail(){
     const email = inputEmail.value.trim();
-    const regexEmail =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regex =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if(!email){
         inputEmail.classList.add('invalid');
-        erroEmail.classList.add ('error');
-        label[1].classList.add ('error');
+        erroEmail.classList.add('error');
+        label[1].classList.add('error');
         erroEmail.innerText = 'Informe seu email.';
         return false;
     }
 
-     if (!regexEmail.test(email)) {
+     if (!regex.test(email)) {
         inputEmail.classList.add('invalid');
         erroEmail.classList.add = ('error');
         erroEmail.innerText = 'insira um email valido';
@@ -59,12 +59,40 @@ function validarEmail(){
     return true;
 }
 
+function validarNumero(){
+    const telefone = inputTel.value.trim();
+    const regex = /(?:([1-9]{2})?)(\d{4,5})(\d{4})$/;
+
+    if(!telefone){
+        inputTel.classList.add('invalid');
+        erroTel.classList.add ('error');
+        label[2].classList.add('error')
+        erroTel.innerText = 'Informe seu telefone.';
+        return false
+    }
+
+    if(!regex.test(telefone)){
+        inputTel.classList.add('invalid');
+        erroTel.classList.add ('error');
+        label[2].classList.add('error');  
+        erroTel.innerText = 'insira um telefone valido';
+        return false
+    }
+
+
+
+    inputTel.classList.remove('invalid');
+    label[2].classList.remove('error');
+    erroTel.textContent = '';
+    return true;
+}
 
 
 function handleSubmit(e){
     e.preventDefault()
     validarNome();
     validarEmail()
+    validarNumero()
 }
 
 
