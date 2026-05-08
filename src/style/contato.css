@@ -34,9 +34,10 @@
 }
 
 .contato__titulo p:first-child{
-    font-size: 4rem;
-    max-width: 300px;
-    margin-bottom: 20px;
+    font-size: 5rem;
+    text-align: c;
+    margin: 20px 0;
+    
 }
 
 .contato__titulo p:first-child span{
@@ -45,10 +46,17 @@
 }
 
 .contato__titulo p:last-child{
-    max-width: 350px;
-    font-size: 1.3rem;
-    line-height: 30px;
+    max-width:400px ;
+    font-size: 2rem;
+    line-height: 40px;
     margin-bottom: 20px;
+    font-family: var(--font-inter);
+    font-weight: 200;
+}
+
+.contato__titulo p:last-child span{
+    color: var(--bronze);
+    font-style: italic;
 }
 
 .contato__info{
@@ -150,7 +158,12 @@
  border: none;
  background-color: var(--bronze-escuro);
  color: white;
- font-size: 15px;
+ font-size: 20px;
  border-radius: 10px;
  cursor: pointer;
+ transition: 0.5s;
+}
+
+.form-botao:hover{
+    background-color: rgb(44, 31, 3);
 }

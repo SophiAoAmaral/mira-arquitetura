@@ -89,10 +89,12 @@ function validarNumero(){
 
 
 function handleSubmit(e){
-    e.preventDefault()
-    validarNome();
-    validarEmail()
-    validarNumero()
+    e.preventDefault();
+
+    if(validarNome() && validarEmail() && validarNumero()){
+        alert('enviado')
+    
+    }
 }
 
 
