@@ -65,6 +65,8 @@
     gap: 20px;
     padding-top: 30px;
     border-top: 1px solid var(--bronze);
+    max-width: 1300px;
+    margin: auto;
 }
 
 .info-bloco__rotulo{

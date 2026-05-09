@@ -45,13 +45,34 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     height: 100px;
     top:0;
     left: 0;
     width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
+}
+
+.header.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    height: 90px;
+}
+
+.header.scrolled .nav-header a {
+    color: black;
+}
+
+.header.scrolled .btn-visita {
+    color: black;
+    border-color: black;
+}
+
+.header.scrolled .btn-visita:hover {
+    background-color: black;
+    color: white;
 }
 
 .header img{
@@ -76,6 +97,7 @@
     text-transform: uppercase;
     font-weight: 200;
     position: relative;
+        transition: color 0.3s ease;
 }
 
 .header .nav-header a:hover::before {
@@ -98,6 +120,7 @@
     border:1px solid white;
     color: white;
     text-transform: uppercase;
+     transition: all 0.3s ease;
 }
 
 .btn-visita:hover{
@@ -177,3 +200,19 @@
     font-size: 28px;
 }
 
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+
+.show{
+    opacity: 1;
+    transition: all 1s;
+    transform: translateX(0);
+    filter: blur(0);
+}

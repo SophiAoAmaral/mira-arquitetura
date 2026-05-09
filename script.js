@@ -99,4 +99,35 @@ function handleSubmit(e){
 
 
 
-form.addEventListener('submit', handleSubmit)
+form.addEventListener('submit', handleSubmit);
+
+
+
+const elements = document.querySelectorAll('.hidden');
+
+const myObserver  = new IntersectionObserver( (e) =>{
+    e.forEach((entry) =>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }else{
+            entry.target.classList.remove('show');
+        }
+    })
+
+});
+
+
+elements.forEach((element) =>{
+        myObserver.observe(element)
+    });
+
+
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
