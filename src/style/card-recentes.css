@@ -63,6 +63,26 @@
     .card-recentes{
         margin-top: 0;
     }
+    .detalhe-recentes{
+        font-size: 12px;
+    }
+    .detalhe-recentes::before{
+    width: 20px;
+    height: 1px;
+    background-color:var(--bronze-escuro);
+    top: 5px;
+    left: -30px;
+}
+    .text-recentes p:first-child{
+        font-size: 50px;
+        margin-left: 15px;
+    }
+    .text-recentes p:last-child{
+        padding-top: 15px;
+        text-align: center;
+        margin: 5px;
+    }
+
 }
 
 .recentes-grid{
