@@ -11,7 +11,6 @@
     margin-top: 50px;
 }
 .recentes{
-
     width: 1800px;
 }
 
@@ -37,6 +36,7 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 .text-recentes p:first-child {
@@ -53,6 +53,16 @@
     font-family: var(--font-inter);
     width: 450px;
     line-height: 25px;
+}
+
+@media(max-width:1200px){
+    #box-recentes{
+        padding-top: 30px;
+    }
+
+    .card-recentes{
+        margin-top: 0;
+    }
 }
 
 .recentes-grid{

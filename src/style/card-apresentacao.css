@@ -1,7 +1,7 @@
 
 .card-apresentacao{
     background-color: var(--bege);
-    max-height: 95vh;
+    height: 95vh;
     padding-top: 15vh ;
 
 }
@@ -35,6 +35,7 @@
     object-fit: cover;
 }
 
+
 .card-text-apresentacao{
     margin-left: 50px;
 }
@@ -56,6 +57,7 @@
     position: relative;
     font-size: 20px;
 }
+
 
 .text-apresentacao::before{
     content: '';
@@ -79,6 +81,7 @@
     margin: 20px 0px;
     
 }
+
 
 .box-infos{
     display: grid;
@@ -136,4 +139,50 @@
     font-size: 25px;
     padding: 5px;
     color: var(--bronze-escuro);
+}
+
+
+
+@media(max-width:1200px){
+    .card-apresentacao{
+        padding-top: 0;
+        height: auto;
+        margin-left: 0;
+    }
+    .card-images{
+        grid-template-columns: 1fr;
+        gap: 0;
+       
+    }
+
+    .card-text-apresentacao{
+        margin-left: 10px;
+
+    }
+    .box-images{
+        grid-template-rows: 1fr;
+        gap: 0;
+ 
+    }
+    .text-apresentacao{
+        font-size: 12px;
+        margin-top: 20px;
+      
+    }
+    .title-apresentacao{
+        font-size: 2rem;
+        margin-left: 0;
+    }
+    .ex-apresentacao{
+        font-size: 15px;
+        margin: 10px 0 ;
+    }
+
+    .box-infos{
+        padding: 10px;
+    }
+    .box-infos span{
+        font-size: 25px;
+    }
+   
 }
