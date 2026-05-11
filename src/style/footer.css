@@ -1,0 +1,54 @@
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--bronze);
+    
+}
+
+.contato__info{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 50px;
+    padding-top: 30px;
+    align-self: center;
+    padding: 30px;
+}
+
+.info-logo{
+    grid-column: 4/4;
+    grid-row: 1/2;
+}
+
+.info-bloco__rotulo{
+    display: block;
+    text-transform: uppercase;
+    font-family: var(--font-mono);
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    color: var(--pergaminho);
+    margin-bottom: 10px;
+}
+
+.info-bloco__destaque{
+    font-family: var(--font-inter);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.info-bloco__complemento{
+    display: inline-flex;
+    font-size: 0.8rem;
+    color: var(--bronze);
+    font-family: var(--font-mono);
+}
+
+footer span{
+    color: rgb(107, 104, 104);
+    align-self: center;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}

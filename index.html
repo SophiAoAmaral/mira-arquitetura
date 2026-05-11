@@ -11,16 +11,16 @@
         <div class="box-shadow">
             <header class="header">
                 <div>
-                    <img src="./src/imgs/mira-logo-transparent-light.png" alt="">
+                    <a href="/"><img src="./src/imgs/mira-logo-transparent-light.png" alt=""></a>
                 </div>
                 <ul style="color: white;" class="nav-header">
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="">Portfólio</a></li>
-                    <li><a href="">Serviços</a></li>
+                    <li><a href="#portifolio">Portfólio</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#clientes">Clientes</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#footer">Contato</a></li>
                 </ul>
-               <div><button class="btn-visita">Agende sua visita</button></div>
+               <div><a href="#form" class="btn-visita">Agende sua visita</a></div>
             </header>
 
             <main>
@@ -134,7 +134,7 @@
         </section>
     </section>
 
-    <section class="card-recentes">
+    <section class="card-recentes" id="portifolio">
 
         <article id="box-recentes">
             <div class="detalhe-recentes">
@@ -201,7 +201,7 @@
 
 
     <section class="card-dedicatoria">
-        <div class="text-dedicatoria hidden">
+        <div class="text-dedicatoria">
             <p>"Uma casa não deveria parecer estar no lugar deveria sempre ter estado."</p>
             <p>helena mira, arquiteta titular</p>
         </div>
@@ -393,6 +393,7 @@
                 </div>
 
                 <button type="submit" class="form-botao">Enviar</button>
+                <span id="validation"></span>
             </form>
         </div>
 
@@ -400,29 +401,46 @@
 </section>
 
 
-<footer>
+<footer id="footer">
         <article class="contato__info">
+
                     <div class="info-bloco info-bloco--estudio">
-                        <span class="info-bloco__rotulo">Estúdio</span>
-                        <p class="info-bloco__destaque">Rua Oscar Freire, 1420</p>
-                        <span class="info-bloco__complemento">Jardins · São Paulo, SP</span>
+                        <dl>
+                            <dt class="info-bloco__rotulo">Estúdio</dt>
+                            <dd class="info-bloco__destaque">Rua Oscar Freire, 1420</dd>
+                            <dd class="info-bloco__complemento">Jardins · São Paulo, SP</dd>
+                        </dl>
                     </div>
-                    <div class="info-bloco info-bloco--contato">
-                        <span class="info-bloco__rotulo">Contato</span>
-                        <p class="info-bloco__destaque">hello@mira.arq.br</p>
-                        <span class="info-bloco__complemento">+55 11 3064 · 8020</span>
-                    </div>
+
+                <div class="info-bloco info-bloco--contato">
+                    <dl>
+                        <dt class="info-bloco__rotulo">Contato</dt>
+                        <dd class="info-bloco__destaque">hello@mira.arq.br</dd>
+                        <dd class="info-bloco__complemento">+55 11 3064 · 8020</dd>
+                    </dl>
+                </div>
+
                     <div class="info-bloco info-bloco--horario">
-                        <span class="info-bloco__rotulo">Horário</span>
-                        <p class="info-bloco__destaque">Ter — Sex · 10h às 18h</p>
-                        <span class="info-bloco__complemento">Visitas somente com agenda</span>
+                        <dl>
+                            <dt class="info-bloco__rotulo">Horário</dt>
+                            <dd class="info-bloco__destaque">Ter — Sex · 10h às 18h</dd>
+                            <dd class="info-bloco__complemento">Visitas somente com agenda</dd>
+                        </dl>
                     </div>
                     <div class="info-bloco info-bloco--atendimento">
-                        <span class="info-bloco__rotulo">Atendimento</span>
-                        <p class="info-bloco__destaque">Brasil & Portugal</p>
-                        <span class="info-bloco__complemento">Projetos a convite no exterior</span>
+
+                        <dl>
+                            <dt class="info-bloco__rotulo">Atendimento</dt>
+                            <dd class="info-bloco__destaque">Brasil & Portugal</dd>
+                            <dd class="info-bloco__complemento">Projetos a convite no exterior</dd>
+                            
+                        </dl>
+                    </div>
+                    <div class="info-logo">
+                        <img src="src/imgs/mira-logo-transparent-light.png" alt="" style="width: 300px;">
                     </div>
                 </article>
+                <span>© 2026 Mira Arquitetura. Todos os direitos reservados.</span>
     
 </footer>
 

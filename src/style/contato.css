@@ -59,35 +59,6 @@
     font-style: italic;
 }
 
-.contato__info{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding-top: 30px;
-    border-top: 1px solid var(--bronze);
-    max-width: 1300px;
-    margin: auto;
-}
-
-.info-bloco__rotulo{
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: var(--font-mono);
-    letter-spacing: 2px;
-    font-size: 0.8rem;
-    color: var(--pergaminho);
-    margin-bottom: 10px;
-}
-
-.info-bloco__destaque{
-    font-family: var(--font-title);
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-}
-
-.info-bloco__complemento{
-    font-size: 0.8rem;
-}
 
 .formulario{
     background-color: rgba(82, 78, 78, 0.212);
@@ -124,6 +95,7 @@
     background-color: transparent;
     border: none;
     border-bottom:1px solid var(--bronze) ;
+    color: white;
 }
 
 .form-campo input:focus,textarea:focus{
@@ -150,6 +122,10 @@
 
 .valid{
     color: green;
+    align-self: center;
+    padding-top: 10px;
+    font-family: var(--font-mono);
+
 }
 
 

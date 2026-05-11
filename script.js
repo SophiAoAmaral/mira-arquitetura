@@ -89,11 +89,16 @@ function validarNumero(){
 
 
 function handleSubmit(e){
+    const validation = document.querySelector('#validation')
     e.preventDefault();
 
     if(validarNome() && validarEmail() && validarNumero()){
-        alert('enviado')
-    
+       validation.innerText = 'Enviado!'
+       validation.classList.add('valid');
+
+       inputName.value = '';
+       inputEmail.value = '';
+       inputTel.value = ''
     }
 }
 
@@ -131,3 +136,14 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
+window.addEventListener('scroll', () => {
+  const logo = document.querySelector('.header img');
+  
+  if (window.scrollY > 100) {
+    logo.src = './src/imgs/mira-logo-transparent-dark.png';
+  } else {
+    logo.src = './src/imgs/mira-logo-transparent-light.png';
+  }
+});
+
