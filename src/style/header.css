@@ -1,7 +1,7 @@
 
 .card-principal{
     height: 95vh;
-    background-image: url(/src/imgs/casa-noturna.jpg);
+    background-image: url(../imgs/casa-noturna.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;

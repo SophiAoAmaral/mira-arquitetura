@@ -1,6 +1,6 @@
 .card-dedicatoria{
     height: 90vh;
-    background-image: url(/src/imgs/casa-vidro.jpg);
+    background-image: url(../imgs/casa-vidro.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
